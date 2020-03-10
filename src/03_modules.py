@@ -14,7 +14,8 @@ import platform
 import socket
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
-print("sys.argv", sys.argv)
+for arg in sys.argv:
+      print("sys.argv", arg)
 
 
 # Print out the OS platform you're using:
