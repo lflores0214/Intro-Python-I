@@ -22,6 +22,7 @@ for arg in sys.argv:
 # YOUR CODE HERE
 print("os name", os.name)
 print("platform system", platform.system())
+print(sys.platform)
 
 # Print out the version of Python you're using:
 # YOUR CODE HERE
@@ -39,3 +40,4 @@ print("CWD", os.getcwd())
 import getpass
 print("socket hostname",socket.gethostname())
 print("os hostname",os.uname()[1])
+print(os.getlogin())
