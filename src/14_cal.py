@@ -59,7 +59,7 @@ else:
 arg_list = [month, year]
 print(arg_list)
 
-# If the user doesn't specify any input, your program should print the calendar for the current month.
+# # If the user doesn't specify any input, your program should print the calendar for the current month.
 # if not arg_list[0]:
 #     month = datetime.today().month
 #     print(calendar.month(2020, month))
@@ -68,8 +68,7 @@ print(arg_list)
 # elif len(arg_list) == 1:
 #   print(calender.month(2020, month))
 # #  If the user specifies two arguments, assume they passed in
-# #  both the month and the year. Render the calendar for that
-# #  month and year.
+# #  both the month and the year. Render the calendar for that month and year.
 # elif len(arg_list) == 2:
 #     if month > 12 or month < 1:
 #         invalid_month()
@@ -81,20 +80,19 @@ print(arg_list)
 #     invalid_format()
 
 # refactored
-# If the user doesn't specify any input, your program should print the calendar for the current month.
+# # If the user doesn't specify any input, your program should print the calendar for the current month.
 if len(sys.argv) == 1:
     # month = datetime.today().month
     print(calendar.month(year, month))
-#  If the user specifies one argument, assume they passed in a
-#  month and render the calendar for that month of the current year.
+# # If the user specifies one argument, assume they passed in a
+# # month and render the calendar for that month of the current year.
 elif len(sys.argv) == 2:
   if len(sys.argv[1]) > 2 or int(sys.argv[1]) > 12 or int(sys.argv[1]) < 1:
     invalid_month()
   else:
     print(calendar.month(year, month))
-#  If the user specifies two arguments, assume they passed in
-#  both the month and the year. Render the calendar for that
-#  month and year.
+# # If the user specifies two arguments, assume they passed in
+# # both the month and the year. Render the calendar for that month and year.
 elif len(sys.argv) == 3:
     if month > 12 or month < 1:
         invalid_month()
